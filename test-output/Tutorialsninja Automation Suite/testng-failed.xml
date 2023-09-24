@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Tutorialsninja Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorialsninja.qa.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Tutorialsninja Test Cases(failed)">
+    <classes>
+      <class name="com.tutorialsninja.qa.testcases.Search">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="setup"/>
+          <include name="searchWithNoTextInSearchBox"/>
+          <include name="searchWithNonexistingProduct"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.Search -->
+    </classes>
+  </test> <!-- Tutorialsninja Test Cases(failed) -->
+</suite> <!-- Failed suite [Tutorialsninja Automation Suite] -->

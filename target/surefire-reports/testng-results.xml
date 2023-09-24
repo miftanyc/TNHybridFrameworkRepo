@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="13" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-24T04:32:00 EDT" name="Tutorialsninja Automation Suite" finished-at="2023-09-24T04:34:25 EDT" duration-ms="144399">
+    <groups>
+    </groups>
+    <test started-at="2023-09-24T04:32:00 EDT" name="Tutorialsninja Test Cases" finished-at="2023-09-24T04:34:25 EDT" duration-ms="144399">
+      <class name="com.tutorialsninja.qa.testcases.Search">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@7e07db1f]" started-at="2023-09-24T04:34:04 EDT" name="setup" finished-at="2023-09-24T04:34:10 EDT" duration-ms="6594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchWithExistingProduct()[pri:1, instance:com.tutorialsninja.qa.testcases.Search@7e07db1f]" started-at="2023-09-24T04:34:10 EDT" name="searchWithExistingProduct" finished-at="2023-09-24T04:34:12 EDT" duration-ms="1403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithExistingProduct -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@7e07db1f]" started-at="2023-09-24T04:34:12 EDT" name="browserQuit" finished-at="2023-09-24T04:34:12 EDT" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@7e07db1f]" started-at="2023-09-24T04:34:12 EDT" name="setup" finished-at="2023-09-24T04:34:22 EDT" duration-ms="9821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchWithNonexistingProduct()[pri:2, instance:com.tutorialsninja.qa.testcases.Search@7e07db1f]" started-at="2023-09-24T04:34:22 EDT" name="searchWithNonexistingProduct" finished-at="2023-09-24T04:34:23 EDT" duration-ms="1193" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [There 'remove this line with quotation' is no product that matches the search criteria.] but found [There is no product that matches the search criteria.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [There 'remove this line with quotation' is no product that matches the search criteria.] but found [There is no product that matches the search criteria.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.tutorialsninja.qa.testcases.Search.searchWithNonexistingProduct(Search.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithNonexistingProduct -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@7e07db1f]" started-at="2023-09-24T04:34:24 EDT" name="browserQuit" finished-at="2023-09-24T04:34:25 EDT" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method signature="searchWithNoTextInSearchBox()[pri:3, instance:com.tutorialsninja.qa.testcases.Search@7e07db1f]" started-at="2023-09-24T04:34:25 EDT" name="searchWithNoTextInSearchBox" finished-at="2023-09-24T04:34:25 EDT" depends-on-methods="com.tutorialsninja.qa.testcases.Search.searchWithNonexistingProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.tutorialsninja.qa.testcases.Search.searchWithNoTextInSearchBox() on instance com.tutorialsninja.qa.testcases.Search@7e07db1f depends on not successfully finished methods 
+[com.tutorialsninja.qa.testcases.Search.searchWithNonexistingProduct() on instance com.tutorialsninja.qa.testcases.Search@7e07db1f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.tutorialsninja.qa.testcases.Search.searchWithNoTextInSearchBox() on instance com.tutorialsninja.qa.testcases.Search@7e07db1f depends on not successfully finished methods 
+[com.tutorialsninja.qa.testcases.Search.searchWithNonexistingProduct() on instance com.tutorialsninja.qa.testcases.Search@7e07db1f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithNoTextInSearchBox -->
+      </class> <!-- com.tutorialsninja.qa.testcases.Search -->
+      <class name="com.tutorialsninja.qa.testcases.Register">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:01 EDT" name="setup" finished-at="2023-09-24T04:32:13 EDT" duration-ms="11952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyRegisteringAnAccountByProvidingOnlyMandatoryFields()[pri:1, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:13 EDT" name="VerifyRegisteringAnAccountByProvidingOnlyMandatoryFields" finished-at="2023-09-24T04:32:15 EDT" duration-ms="2423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRegisteringAnAccountByProvidingOnlyMandatoryFields -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:15 EDT" name="browserQuit" finished-at="2023-09-24T04:32:16 EDT" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:16 EDT" name="setup" finished-at="2023-09-24T04:32:24 EDT" duration-ms="7967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyRegisteringAnAccountByProvidingAllTheFields()[pri:2, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:24 EDT" name="verifyRegisteringAnAccountByProvidingAllTheFields" finished-at="2023-09-24T04:32:26 EDT" duration-ms="2759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisteringAnAccountByProvidingAllTheFields -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:26 EDT" name="browserQuit" finished-at="2023-09-24T04:32:27 EDT" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:27 EDT" name="setup" finished-at="2023-09-24T04:32:35 EDT" duration-ms="8031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyRegisteringAnAccountWithAllMissingField()[pri:3, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:35 EDT" name="varifyRegisteringAnAccountWithAllMissingField" finished-at="2023-09-24T04:32:36 EDT" duration-ms="1470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyRegisteringAnAccountWithAllMissingField -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:36 EDT" name="browserQuit" finished-at="2023-09-24T04:32:37 EDT" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:37 EDT" name="setup" finished-at="2023-09-24T04:32:44 EDT" duration-ms="7934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyRegisteringWithExistingEmail()[pri:4, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:44 EDT" name="varifyRegisteringWithExistingEmail" finished-at="2023-09-24T04:32:47 EDT" duration-ms="2240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyRegisteringWithExistingEmail -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@661972b0]" started-at="2023-09-24T04:32:47 EDT" name="browserQuit" finished-at="2023-09-24T04:32:47 EDT" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.tutorialsninja.qa.testcases.Register -->
+      <class name="com.tutorialsninja.qa.testcases.Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:32:48 EDT" name="setup" finished-at="2023-09-24T04:32:56 EDT" duration-ms="7623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyLoginWithValidCredential(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:32:56 EDT" name="varifyLoginWithValidCredential" data-provider="validCredentialSupplier" finished-at="2023-09-24T04:32:58 EDT" duration-ms="1771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[miftanyc+qa@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyLoginWithValidCredential -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:32:58 EDT" name="browserQuit" finished-at="2023-09-24T04:32:58 EDT" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:32:58 EDT" name="setup" finished-at="2023-09-24T04:33:06 EDT" duration-ms="7608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyLoginWithValidCredential(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:06 EDT" name="varifyLoginWithValidCredential" data-provider="validCredentialSupplier" finished-at="2023-09-24T04:33:08 EDT" duration-ms="1773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[miftanyc+qa1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyLoginWithValidCredential -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:08 EDT" name="browserQuit" finished-at="2023-09-24T04:33:08 EDT" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:08 EDT" name="setup" finished-at="2023-09-24T04:33:15 EDT" duration-ms="7507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyLoginWithValidCredential(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:15 EDT" name="varifyLoginWithValidCredential" data-provider="validCredentialSupplier" finished-at="2023-09-24T04:33:17 EDT" duration-ms="1842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[miftanyc+qa2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyLoginWithValidCredential -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:17 EDT" name="browserQuit" finished-at="2023-09-24T04:33:18 EDT" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:18 EDT" name="setup" finished-at="2023-09-24T04:33:25 EDT" duration-ms="7511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyLoginWithValidCredential(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:25 EDT" name="varifyLoginWithValidCredential" data-provider="validCredentialSupplier" finished-at="2023-09-24T04:33:27 EDT" duration-ms="1673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[miftanyc+qa3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyLoginWithValidCredential -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:27 EDT" name="browserQuit" finished-at="2023-09-24T04:33:27 EDT" duration-ms="402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:27 EDT" name="setup" finished-at="2023-09-24T04:33:35 EDT" duration-ms="7282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyLoginWithInvalidCredential()[pri:2, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:35 EDT" name="varifyLoginWithInvalidCredential" finished-at="2023-09-24T04:33:36 EDT" duration-ms="1463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyLoginWithInvalidCredential -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:36 EDT" name="browserQuit" finished-at="2023-09-24T04:33:36 EDT" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:36 EDT" name="setup" finished-at="2023-09-24T04:33:44 EDT" duration-ms="7503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyLoginWithInvalidEmailAndValidPassword()[pri:3, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:44 EDT" name="varifyLoginWithInvalidEmailAndValidPassword" finished-at="2023-09-24T04:33:45 EDT" duration-ms="1461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyLoginWithInvalidEmailAndValidPassword -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:45 EDT" name="browserQuit" finished-at="2023-09-24T04:33:46 EDT" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:46 EDT" name="setup" finished-at="2023-09-24T04:33:53 EDT" duration-ms="7367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyLoginWithValidEmailAndInvalidPassword()[pri:4, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:53 EDT" name="varifyLoginWithValidEmailAndInvalidPassword" finished-at="2023-09-24T04:33:54 EDT" duration-ms="1398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyLoginWithValidEmailAndInvalidPassword -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:54 EDT" name="browserQuit" finished-at="2023-09-24T04:33:55 EDT" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:33:55 EDT" name="setup" finished-at="2023-09-24T04:34:02 EDT" duration-ms="7522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varifyLoginWithoutProvidingCredentials()[pri:5, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:34:02 EDT" name="varifyLoginWithoutProvidingCredentials" finished-at="2023-09-24T04:34:03 EDT" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyLoginWithoutProvidingCredentials -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@79e2c065]" started-at="2023-09-24T04:34:03 EDT" name="browserQuit" finished-at="2023-09-24T04:34:04 EDT" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.tutorialsninja.qa.testcases.Login -->
+    </test> <!-- Tutorialsninja Test Cases -->
+  </suite> <!-- Tutorialsninja Automation Suite -->
+</testng-results>
